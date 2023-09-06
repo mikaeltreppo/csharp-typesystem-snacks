@@ -1,7 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 //Snack 1: L’utente inserisce due numeri in successione. Il software stampa il maggiore.
-Console.WriteLine("Inserisci due numeri, selezionerò il maggiore!");
+/*Console.WriteLine("Inserisci due numeri, selezionerò il maggiore!");
 int firstNumber = int.Parse(Console.ReadLine());
 int secondNumber = int.Parse(Console.ReadLine());
 
@@ -48,10 +48,22 @@ for (int i = 0; i < 10; i++)
 
 }
 
-Console.WriteLine(sum);
+Console.WriteLine(sum);*/
 
 
 //Snack 4: Calcola la somma e la media dei numeri da 2 a 10.
+
+Console.WriteLine("Sommiamo i numeri da 2 a 10");
+int sumNumber = 0;
+int startNumber = 2;
+int endNumber = 10;
+for(int i = 2; i < 11; i++)
+{
+    sumNumber = sumNumber + i;
+}
+Console.WriteLine(sumNumber);
+Console.WriteLine($"La media dei numeri è {sumNumber / (endNumber - (startNumber - 1))}");
+
 //Snack 5: Il software chiede all’utente di inserire un numero. Se il numero inserito è pari, stampa il numero, se è dispari, stampa il numero successivo.
 //Snack 6: In un array sono contenuti i nomi degli invitati alla festa del grande Gatsby. Chiedi all’utente il suo nome e comunicagli se può partecipare o meno alla festa.
 //Snack 7: Crea un array vuoto. Chiedi per 6 volte all’utente di inserire un numero, se è dispari inseriscilo nell’array.
