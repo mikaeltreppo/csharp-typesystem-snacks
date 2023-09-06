@@ -18,6 +18,22 @@ else
     Console.WriteLine("I numeri sono uguali");
 }
 //Snack 2 : L’utente inserisce due parole in successione. Il software stampa prima la parola più corta, poi la parola più lunga.
+Console.WriteLine("Inserisci due parole, selezionerò la Parola più lunga");
+string firstWord = Console.ReadLine();
+string secondWord =Console.ReadLine();
+
+if (firstWord.Length > secondWord.Length)
+{
+    Console.WriteLine($"La parola più lunga è {firstWord}");
+}
+else if (firstWord.Length < secondWord.Length)
+{
+    Console.WriteLine($"La parola più lunga è {secondWord}");
+}
+else
+{
+    Console.WriteLine("Le parole sono uguali");
+}
 //Snack 3: Il software deve chiedere per 10 volte all’utente di inserire un numero. Il programma stampa la somma di tutti i numeri inseriti.
 //Snack 4: Calcola la somma e la media dei numeri da 2 a 10.
 //Snack 5: Il software chiede all’utente di inserire un numero. Se il numero inserito è pari, stampa il numero, se è dispari, stampa il numero successivo.
