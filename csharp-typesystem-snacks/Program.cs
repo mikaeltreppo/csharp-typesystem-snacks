@@ -120,7 +120,7 @@ for(int i = 0; i < numbers.Length; i++)
       sumOddNumbers = sumOddNumbers + numbers[i];
     }
 }
-Console.WriteLine(sumOddNumbers);*/
+Console.WriteLine(sumOddNumbers);
 //Snack 9: Crea un array vuoto e chiedi all’utente un numero da inserire nell’array. Continua a chiedere i numeri all’utente e a inserirli nell’array, fino a quando la somma degli elementi è minore di 50.
 int[] arrayNumbers = new int[20];
 int tot = 0;
@@ -137,8 +137,34 @@ int tot = 0;
     Console.WriteLine("esaerato!");
         break;
     }
-    }
+    }*/
 
 
 
 //Snack 10: Fai inserire un numero, che chiameremo N, all’utente. Genera N array, ognuno formato da 10 numeri casuali tra 1 e 100. Ogni volta che ne crei uno, stampalo a schermo.
+
+Console.Write("Inserisci un numero");
+int N = int.Parse(Console.ReadLine());
+Random rnd = new Random();
+
+for (int i = 0; i < N; i++)
+{
+    int[] array = new int[10];
+
+    for (int j = 0; j < 10; j++)
+    {
+        array[j] = rnd.Next(1, 101); 
+    }
+
+    Console.WriteLine("Array " + (i + 1) + ":");
+    for (int x = 0; x < 10; x++)
+    {
+        Console.WriteLine(array[x]);
+    }
+}
+    
+
+
+
+
+
