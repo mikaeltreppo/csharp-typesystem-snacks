@@ -87,7 +87,7 @@ if ( containName == true)
 else
 {
     Console.WriteLine($"{name} sei fortunato, non sei invitato, e ti invidio");
-}*/
+}
 
 //Snack 7: Crea un array vuoto. Chiedi per 6 volte all’utente di inserire un numero, se è dispari inseriscilo nell’array.
 
@@ -108,9 +108,19 @@ for (int i = 0; i < 6; i++)
 {
     Console.WriteLine(evenNumbers[i]);
 }
-
+*/
 
 
 //Snack 8: Crea un array di numeri interi e fai la somma di tutti gli elementi che sono in posizione dispari.
+int [] numbers = { 9, 8, 7, 90, 87, 65 };
+int sumOddNumbers = 0;
+for(int i = 0; i < numbers.Length; i++)
+{
+   if (numbers[i] % 2 !=0)
+    {
+      sumOddNumbers = sumOddNumbers + numbers[i];
+    }
+}
+Console.WriteLine(sumOddNumbers);
 //Snack 9: Crea un array vuoto e chiedi all’utente un numero da inserire nell’array. Continua a chiedere i numeri all’utente e a inserirli nell’array, fino a quando la somma degli elementi è minore di 50.
 //Snack 10: Fai inserire un numero, che chiameremo N, all’utente. Genera N array, ognuno formato da 10 numeri casuali tra 1 e 100. Ogni volta che ne crei uno, stampalo a schermo.
