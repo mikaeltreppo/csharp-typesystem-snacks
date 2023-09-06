@@ -62,7 +62,7 @@ for(int i = 2; i < 11; i++)
     sumNumber = sumNumber + i;
 }
 Console.WriteLine(sumNumber);
-Console.WriteLine($"La media dei numeri è {sumNumber / (endNumber - (startNumber - 1))}");*/
+Console.WriteLine($"La media dei numeri è {sumNumber / (endNumber - (startNumber - 1))}");
 
 //Snack 5: Il software chiede all’utente di inserire un numero. Se il numero inserito è pari, stampa il numero, se è dispari, stampa il numero successivo.
 Console.WriteLine("Scegli un numero ");
@@ -74,8 +74,21 @@ if (userNumber % 2 == 0)
 else
 {
     Console.WriteLine($"il tuo numero era dispari, quindi ho aggiunto 1, ora è{userNumber+1}");
-}
+}*/
 //Snack 6: In un array sono contenuti i nomi degli invitati alla festa del grande Gatsby. Chiedi all’utente il suo nome e comunicagli se può partecipare o meno alla festa.
+string[] invited = { "luca", "giulia", "piero", "carlo", "andrea" };
+Console.WriteLine("Inserisci il tuo nome");
+string name = Console.ReadLine();
+bool containName = invited.Contains(name);
+if ( containName == true)
+{
+    Console.WriteLine("benvenuto alla festa, sei un invitato...mi dispiace per te");
+}
+else
+{
+    Console.WriteLine($"{name} sei fortunato, non sei invitato, e ti invidio");
+}
+
 //Snack 7: Crea un array vuoto. Chiedi per 6 volte all’utente di inserire un numero, se è dispari inseriscilo nell’array.
 //Snack 8: Crea un array di numeri interi e fai la somma di tutti gli elementi che sono in posizione dispari.
 //Snack 9: Crea un array vuoto e chiedi all’utente un numero da inserire nell’array. Continua a chiedere i numeri all’utente e a inserirli nell’array, fino a quando la somma degli elementi è minore di 50.
